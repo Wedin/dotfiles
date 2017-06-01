@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+prompt_exit_overwrite() {
+   read -p "This will overwrite '$@'  Are you sure? (y/n) " -n 1;
+    echo "";
+    if [[ ! $REPLY =~ ^[Yy]$ ]]
+    then
+        echo "exiting..."
+        [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1 # exit
+    fi
+}
+
+file_exist() {
+  if [ -f "$@" ]; then
+      prompt_exit_overwrite "$@"
+  fi
+}
+
+file_exist ~/.gitconfig
+file_exist ~/.gitconfig
+file_exist ~/.gitco2nfig2
+file_exist ~/Library/Application\ Support/Spectacle/Shortcuts.json
+

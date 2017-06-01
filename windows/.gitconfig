@@ -1,0 +1,7 @@
+[core]
+	editor = "'C:/Program Files/Sublime Text 3/subl.exe' -w"
+	commentChar = ";"
+[user]
+	name = Daniel Wedin
+	email = danielwedin@hotmail.se
+
