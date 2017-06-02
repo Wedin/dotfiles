@@ -4,4 +4,16 @@
 [user]
 	name = Daniel Wedin
 	email = danielwedin@hotmail.se
+[color]
+  ui = true
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "status"]
+  added = green reverse
+  changed = red bold
+  untracked = green
+[alias]
+  lg = log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' --abbrev-commit
 
