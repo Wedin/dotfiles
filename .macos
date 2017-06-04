@@ -2,6 +2,7 @@
 
 ###############################################################################
 # Helpers
+###############################################################################
 
 prompt_exit_overwrite() {
    read -p "This will overwrite '$@'  Are you sure? (y/n) " -n 1;
@@ -54,6 +55,33 @@ defaults write com.apple.dock expose-animation-duration -float 0.1
 echo "🎎  Dock prefs DONE! 🤘"
 
 ###############################################################################
+# Finder
+###############################################################################
+
+# Default location for new Finder windows
+defaults write com.apple.finder NewWindowTarget -string "PfHm"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
+
+# Finder: show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Disable the warning when changing a file extension
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# Avoid creating .DS_Store files on network or USB volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
+# Display full POSIX path as Finder window title
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+
+# Allow text selection in Quick Look
+defaults write com.apple.finder QLEnableTextSelection -bool true
+
+chflags nohidden ~/Library
+
+
+###############################################################################
 # Trackpad
 ###############################################################################
 
@@ -88,17 +116,24 @@ cp .gitignore ~/.gitignore
 file_exist ~/.gitconfig
 cp .gitconfig ~/.gitconfig
 
-########################################################
+###############################################################################
+# Mail
+###############################################################################
+
+# Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
+defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+
+###############################################################################
 # Spectacle.app
-########################################################
+###############################################################################
 
 file_exist ~/Library/Application\ Support/Spectacle/Shortcuts.json
 cp apps/Spectacle/Shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
 echo "👓  Spectacle prefs DONE! 🤘"
 
-########################################################
+###############################################################################
 # Sublime Text.app
-########################################################
+###############################################################################
 
 file_exist ~/Library/Application\ Support/Sublime\ Text/Preferences.sublime-settings
 cp apps/Sublime\ Text/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings
