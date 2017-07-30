@@ -8,20 +8,20 @@ This will change the system to my preferences.
 
 Installs Homebrew and some common Homebrew formulae
 ```bash
-./.brew.sh
+./brew.sh
 ```
 
 ### macOS defaults
 Run to customize a new Mac. (This includes my git-settings)
 ```bash
-./.macos
+./macos.sh
 ```
 
 ### Backup
 Copy settings to this repo:
 
 ```bash
-./.backup
+./backup.sh
 ```
 
 Inspired by https://github.com/mathiasbynens/dotfiles
