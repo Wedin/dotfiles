@@ -107,16 +107,6 @@ defaults write NSGlobalDomain AppleLanguages -array "sv-SE" "en-SE"
 defaults write NSGlobalDomain AppleLocale -string "sv_SE"
 
 ###############################################################################
-# Git
-###############################################################################
-
-file_exist ~/.gitignore
-cp .gitignore ~/.gitignore
-
-file_exist ~/.gitconfig
-cp .gitconfig ~/.gitconfig
-
-###############################################################################
 # Mail
 ###############################################################################
 
@@ -140,6 +130,19 @@ cp apps/Sublime\ Text/Preferences.sublime-settings ~/Library/Application\ Suppor
 
 echo "🍋  Sublime Text prefs DONE! 🤘"
 
+###############################################################################
+# Configs
+###############################################################################
+
+
+file_exist ~/.gitignore
+cp .gitignore ~/.gitignore
+
+file_exist ~/.gitconfig
+cp .gitconfig ~/.gitconfig
+
+file_exist ~/.zshrc
+cp .zshrc ~/.zshrc
 
 # Let's celebrate & kill affected apps
 echo "ALL DONE! 🤘 Killing apps!"
@@ -151,6 +154,7 @@ for app in "Activity Monitor" \
   "Spectacle" \
   "SystemUIServer" \
   "Terminal" \
+  "iTerm2" \
   "iCal"; do
   killall "${app}" &> /dev/null
 done

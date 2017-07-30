@@ -24,9 +24,10 @@ cp ~/Library/Application\ Support/Spectacle/Shortcuts.json apps/Spectacle/Shortc
 cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings apps/Sublime\ Text/Preferences.sublime-settings
 
 ########################################################
-# Git
+# Other
 ########################################################
 cp ~/.gitconfig .gitconfig
 cp ~/.gitignore .gitignore
+cp ~/.zshrc .zshrc
 
 echo "Backup finished!"
