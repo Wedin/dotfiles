@@ -1,6 +1,6 @@
 # dotfiles
 
-This will change the system to my personal preferences 🤘
+These are the dotfiles I use on my mac and will change the system to my personal preferences 🤘.
 
 ## Usage
 
@@ -20,13 +20,15 @@ Run to customize a new Mac to my settings. This will overwrite any existing file
 ```
 
 ### Backup
-Copy settings to this repo. This will copy all files used by `./macos.sh` here.
+Copy settings to this repo. This will copy all files used by `./macos.sh` here. Currently copies settings for Spectacle, Sublime Text and git configs.
 
 ```bash
 ./backup.sh
 ```
 
-Other things I've left out:
-* https://github.com/powerline/fonts
+The iTerm2 profile needs to be exported seperately `Preferences -> General -> Load preferences from a custom folder or URL`.
+
+### Post-installation:
+* Install missing Sublime Text packages.
 
 Inspired by https://github.com/mathiasbynens/dotfiles
