@@ -131,6 +131,14 @@ cp apps/Sublime\ Text/Preferences.sublime-settings ~/Library/Application\ Suppor
 echo "🍋  Sublime Text prefs DONE! 🤘"
 
 ###############################################################################
+# iTerm2
+###############################################################################
+
+# Set iTerm2 Profile to custom folder
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/Projects/dotfiles/apps/iTerm2"
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+
+###############################################################################
 # Configs
 ###############################################################################
 

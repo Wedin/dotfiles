@@ -14,7 +14,7 @@ Installs Homebrew and some common Homebrew formulae
 ```
 
 ### macOS defaults
-Run to customize a new Mac to my settings. This will overwrite any existing files. This currently includes my personal git configs 👻.
+Run to customize a new Mac to my settings. This will overwrite any existing files. This currently includes my personal git configs 👻. This will also install defaults for some common apps I use, which are installed with the homebrew command.
 ```bash
 ./macos.sh
 ```
