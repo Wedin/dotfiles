@@ -25,5 +25,9 @@ if [[ `uname` == "Darwin" ]]; then
   # install other apps
   brew cask install slack google-chrome firefox vlc sublime-text spectacle spotify dropbox skype iterm2
 
-  brew install z
+  brew install z zsh zsh-completions
 fi
+
+# oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
