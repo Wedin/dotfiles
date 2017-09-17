@@ -93,6 +93,18 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeF
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Dragging -bool true
 
 ###############################################################################
+# Keyboard
+###############################################################################
+
+# Increase speed for keyboard repeat rate
+defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write InitialKeyRepeat -int 10
+
+# Slow keys = tröga tangenter
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
+
+###############################################################################
 # Language
 ###############################################################################
 

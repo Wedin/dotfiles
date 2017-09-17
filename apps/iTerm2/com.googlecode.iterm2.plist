@@ -440,7 +440,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 4</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Desktop</string>
+	<string>~/Projects/dotfiles/apps/iTerm2</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
@@ -486,11 +486,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>431 1427 599 388 -519 900 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>446 1545 796 473 -519 900 2560 1417 </string>
+	<string>352 265 918 495 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>529 136 745 741 0 0 1440 877 </string>
+	<string>721 76 717 797 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>35 484 570 377 0 0 1440 877 </string>
+	<string>35 484 585 377 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1804,7 +1804,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/daniel.wedin/Projects/dotfiles/apps/iTerm2</string>
+	<string>~/Projects/dotfiles/apps/iTerm2</string>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -1814,11 +1814,15 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-08-12T12:38:15Z</date>
+	<date>2017-08-15T11:32:25Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
+	<key>findIgnoreCase_iTerm</key>
+	<true/>
+	<key>findRegex_iTerm</key>
+	<false/>
 	<key>iTerm Version</key>
 	<string>3.0.15</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
