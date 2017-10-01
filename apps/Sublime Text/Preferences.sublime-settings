@@ -7,6 +7,7 @@
 		"*.psd",
 		"*.ai",
 		"*.min.js",
+		"*.otf",
 		"tmp/",
 		"_tmp/"
 	],
@@ -35,7 +36,7 @@
 		"_projects"
 	],
 	"font_face": "inconsolata",
-	"font_size": 12,
+	"font_size": 15,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -56,7 +57,7 @@
 	"match_brackets_square": true,
 	"open_files_in_new_window": false,
 	"tab_size": 2,
-	"theme": "itg.flat.dark.sublime-theme",
+	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
 }
