@@ -150,6 +150,11 @@ echo "🍋  Sublime Text prefs DONE! 🤘"
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/Projects/dotfiles/apps/iTerm2"
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
+# Don’t ask before quitting iTerm
+defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+
+# The rest of iTerm settings are set from the preferences file.
+
 ###############################################################################
 # Configs
 ###############################################################################
