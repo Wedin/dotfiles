@@ -23,6 +23,17 @@ cp ~/Library/Application\ Support/Spectacle/Shortcuts.json apps/Spectacle/Shortc
 
 cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings apps/Sublime\ Text/Preferences.sublime-settings
 
+
+########################################################
+# VS Code
+########################################################
+
+cp ~/Library/Application\ Support/Code/User/settings.json apps/Code/settings.json
+cp ~/Library/Application\ Support/Code/User/keybindings.json apps/Code/keybindings.json
+cp -R ~/Library/Application\ Support/Code/User/snippets/ apps/Code/snippets/
+
+
+
 ########################################################
 # Other
 ########################################################

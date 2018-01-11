@@ -1,0 +1,30 @@
+{
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
+    },
+    "eslint.autoFixOnSave": true,
+    "files.trimTrailingWhitespace": true,
+    "window.zoomLevel": 0,
+    "prettier.printWidth": 200,
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "es5",
+    "prettier.stylelintIntegration": true,
+    "prettier.eslintIntegration": true,
+    "html.format.wrapLineLength": 200,
+
+    "[reason]": {
+        "editor.formatOnSave": false,
+    },
+
+    "reason.diagnostics.tools": [
+        "merlin",
+        "bsb"
+    ]
+}
