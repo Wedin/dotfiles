@@ -37,8 +37,8 @@ osascript -e 'tell application "System Preferences" to quit'
 # Dock
 ###############################################################################
 
-# Make Dock items 40px
-defaults write com.apple.dock tilesize -int 40
+# Set size (px) of Dock items
+defaults write com.apple.dock tilesize -int 32
 
 # Enable magnification
 defaults write com.apple.dock magnification -bool true
@@ -122,6 +122,28 @@ defaults write com.apple.screencapture type jpg
 
 # Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+
+defaults write com.apple.mail DisableReplyAnimations -bool true
+defaults write com.apple.mail DisableSendAnimations -bool true
+
+###############################################################################
+# Safari
+###############################################################################
+
+defaults write com.apple.Safari UniversalSearchEnabled -bool false
+defaults write com.apple.Safari SuppressSearchSuggestions -bool true
+defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
+defaults write com.apple.Safari WebContinuousSpellCheckingEnabled -bool true
+
+# Disable popups
+defaults write com.apple.Safari WebKitJavaScriptCanOpenWindowsAutomatically -bool false
+defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2JavaScriptCanOpenWindowsAutomatically -bool false
+
+
 
 ###############################################################################
 # Spectacle.app
