@@ -56,5 +56,5 @@
         "editor.formatOnSave": true,
         "files.insertFinalNewline": true,
     },
-
+    "window.title": "${activeEditorLong}${separator}${rootName}",
 }
