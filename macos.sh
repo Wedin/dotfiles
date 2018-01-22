@@ -176,6 +176,13 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 # The rest of iTerm settings are set from the preferences file.
 
 ###############################################################################
+# Karabiner Elements
+###############################################################################
+
+file_exist ~/.config/karabiner/karabiner.json
+cp apps/Karabiner-Elements/karabiner.json ~/.config/karabiner/karabiner.json
+
+###############################################################################
 # Configs
 ###############################################################################
 

@@ -32,7 +32,11 @@ cp ~/Library/Application\ Support/Code/User/settings.json apps/Code/settings.jso
 cp ~/Library/Application\ Support/Code/User/keybindings.json apps/Code/keybindings.json
 cp -R ~/Library/Application\ Support/Code/User/snippets/ apps/Code/snippets/
 
+########################################################
+# Karabiner Elements
+########################################################
 
+cp ~/.config/karabiner/karabiner.json apps/Karabiner-Elements/karabiner.json
 
 ########################################################
 # Other
