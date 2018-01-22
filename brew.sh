@@ -23,9 +23,10 @@ if [[ `uname` == "Darwin" ]]; then
   brew cask install qlimagesize quicklook-json qlmarkdown qlstephen qlcolorcode
 
   # install other apps
-  brew cask install slack google-chrome firefox vlc sublime-text spectacle spotify dropbox skype iterm2
-
-  brew install z zsh zsh-completions
+  brew cask install slack vlc spectacle spotify dropbox skype iterm2
+  brew cask install google-chrome firefox
+  brew cask install sublime-text visual-studio-code
+  brew install z zsh zsh-completions dark-mode
 fi
 
 # oh-my-zsh

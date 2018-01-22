@@ -97,13 +97,12 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Dragging -bool
 ###############################################################################
 
 # Increase speed for keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 1
-defaults write InitialKeyRepeat -int 10
+defaults write -g InitialKeyRepeat -int 10
+defaults write -g KeyRepeat -int 2
 
 # Slow keys = tröga tangenter
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
-
 ###############################################################################
 # Language
 ###############################################################################
@@ -112,11 +111,10 @@ defaults write NSGlobalDomain AppleLanguages -array "sv-SE" "en-SE"
 defaults write NSGlobalDomain AppleLocale -string "sv_SE"
 
 ###############################################################################
-# Language
+# General
 ###############################################################################
 
-defaults write NSGlobalDomain AppleLanguages -array "sv-SE" "en-SE"
-defaults write NSGlobalDomain AppleLocale -string "sv_SE"
+defaults write com.apple.screencapture type jpg
 
 ###############################################################################
 # Mail
