@@ -97,8 +97,8 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Dragging -bool
 ###############################################################################
 
 # Increase speed for keyboard repeat rate
-defaults write -g InitialKeyRepeat -int 10
-defaults write -g KeyRepeat -int 2
+defaults write -g InitialKeyRepeat -int 15
+defaults write -g KeyRepeat -int 1
 
 # Slow keys = tröga tangenter
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false

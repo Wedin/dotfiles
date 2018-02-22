@@ -84,6 +84,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Workaround for VSCode built-in terminal
+export LANG=sv_SE.UTF-8
+
 . /usr/local/etc/profile.d/z.sh
 
 # https://github.com/zsh-users/zsh-autosuggestions

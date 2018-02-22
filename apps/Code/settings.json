@@ -56,5 +56,16 @@
         "editor.formatOnSave": true,
         "files.insertFinalNewline": true,
     },
+    "[json]": {
+        "editor.formatOnSave": false,
+        "files.insertFinalNewline": true,
+    },
     "window.title": "${activeEditorLong}${separator}${rootName}",
+    "terminal.integrated.setLocaleVariables": false,
+    "editor.fontSize": 13,
+    "window.newWindowDimensions": "maximized",
+    "editor.minimap.enabled": false,
+    "explorer.openEditors.visible": 0,
+    "window.zoomLevel": 0,
+    "diffEditor.ignoreTrimWhitespace": false,
 }
