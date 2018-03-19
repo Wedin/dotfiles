@@ -20,17 +20,11 @@ Run to customize a new Mac to my settings. This will overwrite any existing file
 ```
 
 ### Backup
-Copy settings to this repo. This will copy all files used by `./macos.sh` here. Currently copies settings for Spectacle, Sublime Text and git configs.
+Copy settings to this repo. This will copy all files used by `./macos.sh` here. The script will currently copy settings for Spectacle, Sublime Text, git settings, VSCode (and it's extensions), and Karabiner elements.
 
 ```bash
 ./backup.sh
 ```
-
-Backup VSCode extensions
-```bash
-code --list-extensions > apps/Code/extensions
-```
-
 
 The iTerm2 profile needs to be exported seperately `Preferences -> General -> Load preferences from a custom folder or URL`.
 

@@ -45,4 +45,7 @@ cp ~/.gitconfig .gitconfig
 cp ~/.gitignore .gitignore
 cp ~/.zshrc .zshrc
 
+# Backup VSCode extensions
+code --list-extensions > apps/Code/extensions
+
 echo "Backup finished!"
