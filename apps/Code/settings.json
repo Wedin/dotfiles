@@ -6,6 +6,7 @@
         "suppressGitVersionWarning": false,
         "suppressLineUncommittedWarning": false,
         "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": true,
         "suppressUpdateNotice": false,
         "suppressWelcomeNotice": true
     },
@@ -14,7 +15,7 @@
     "html.format.wrapLineLength": 200,
     "workbench.sideBar.location": "right",
 
-    "prettier.printWidth": 200,
+    "prettier.printWidth": 140,
     "prettier.singleQuote": true,
     "prettier.trailingComma": "es5",
     "prettier.stylelintIntegration": true,
@@ -38,6 +39,7 @@
         "coverage": true,
         "package-lock.json": true,
         "test_results/": true,
+        "./vs-code": true,
     },
     "files.watcherExclude": {
         "**/.git/objects/**": true,
@@ -68,4 +70,15 @@
     "explorer.openEditors.visible": 0,
     "window.zoomLevel": 0,
     "diffEditor.ignoreTrimWhitespace": false,
+    "gitlens.keymap": "alternate",
+
+    // bracketPairColorizer settings
+    "bracketPairColorizer.forceUniqueOpeningColor": true,
+    "bracketPairColorizer.highlightActiveScope": true,
+    "bracketPairColorizer.activeScopeCSS": [
+        "borderStyle : solid",
+        "borderWidth : 1px",
+        "borderColor : {color}; opacity: 0.5",
+        "backgroundColor: {color}"
+    ],
 }
