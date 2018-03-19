@@ -26,6 +26,12 @@ Copy settings to this repo. This will copy all files used by `./macos.sh` here. 
 ./backup.sh
 ```
 
+Backup VSCode extensions
+```bash
+code --list-extensions > apps/Code/extensions
+```
+
+
 The iTerm2 profile needs to be exported seperately `Preferences -> General -> Load preferences from a custom folder or URL`.
 
 ### Installation:
