@@ -7,6 +7,7 @@
         "suppressLineUncommittedWarning": false,
         "suppressNoRepositoryWarning": false,
         "suppressResultsExplorerNotice": true,
+        "suppressShowKeyBindingsNotice": true,
         "suppressUpdateNotice": false,
         "suppressWelcomeNotice": true
     },
@@ -38,6 +39,7 @@
         "/node_modules": true,
         "coverage": true,
         "package-lock.json": true,
+        "yarn.lock": true,
         "test_results/": true,
         "./vs-code": true,
     },

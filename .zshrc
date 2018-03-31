@@ -93,3 +93,5 @@ export LANG=sv_SE.UTF-8
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 source /Users/daniel.wedin/Projects/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+source ~/.bashrc
