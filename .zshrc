@@ -51,7 +51,7 @@ ZSH_THEME="gallois"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git extract)
+plugins=(git extract git-open)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -95,3 +95,5 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /Users/daniel.wedin/Projects/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source ~/.bashrc
+
+. /Users/daniel.wedin/Projects/development-environment/install/environment/mac/bash.include  # Added by Pingdom Dev Env

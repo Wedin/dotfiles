@@ -1,86 +1,95 @@
 {
-    "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": true,
-        "suppressShowKeyBindingsNotice": true,
-        "suppressUpdateNotice": false,
-        "suppressWelcomeNotice": true
-    },
-
-    "eslint.autoFixOnSave": true,
-    "html.format.wrapLineLength": 200,
-    "workbench.sideBar.location": "right",
-
-    "prettier.printWidth": 140,
-    "prettier.singleQuote": true,
-    "prettier.trailingComma": "es5",
-    "prettier.stylelintIntegration": true,
-    "prettier.eslintIntegration": true,
-
-
-    "[reason]": {
-        "editor.formatOnSave": false,
-    },
-
-    "reason.diagnostics.tools": [
-        "merlin",
-        "bsb"
-    ],
-
-    // Extensive search modification to allow search inside src/node_modules and test/node_modules
-    "search.exclude": {
-        "build/**": true,
-        "**/node_modules": false,
-        "/node_modules": true,
-        "coverage": true,
-        "package-lock.json": true,
-        "yarn.lock": true,
-        "test_results/": true,
-        "./vs-code": true,
-    },
-    "files.watcherExclude": {
-        "**/.git/objects/**": true,
-        "**/.git/subtree-cache/**": true,
-        "src/node_modules/**": false,
-        "test/node_modules/**": false,
-        "/node_modules/**": true,
-    },
-    "files.insertFinalNewline": true,
-    "[plaintext]": {
-        "files.insertFinalNewline": false,
-    },
-    "files.trimTrailingWhitespace": true,
-    "telemetry.enableTelemetry": false,
-    "[postcss]": {
-        "editor.formatOnSave": true,
-        "files.insertFinalNewline": true,
-    },
-    "[json]": {
-        "editor.formatOnSave": false,
-        "files.insertFinalNewline": true,
-    },
-    "window.title": "${activeEditorLong}${separator}${rootName}",
-    "terminal.integrated.setLocaleVariables": false,
-    "editor.fontSize": 13,
-    "window.newWindowDimensions": "maximized",
-    "editor.minimap.enabled": false,
-    "explorer.openEditors.visible": 0,
-    "window.zoomLevel": 0,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "gitlens.keymap": "alternate",
-
-    // bracketPairColorizer settings
-    "bracketPairColorizer.forceUniqueOpeningColor": true,
-    "bracketPairColorizer.highlightActiveScope": true,
-    "bracketPairColorizer.activeScopeCSS": [
-        "borderStyle : solid",
-        "borderWidth : 1px",
-        "borderColor : {color}; opacity: 0.5",
-        "backgroundColor: {color}"
-    ],
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": true,
+    "suppressShowKeyBindingsNotice": true,
+    "suppressUpdateNotice": false,
+    "suppressWelcomeNotice": true
+  },
+  "eslint.autoFixOnSave": true,
+  "html.format.wrapLineLength": 200,
+  "workbench.sideBar.location": "right",
+  "prettier.printWidth": 140,
+  "prettier.stylelintIntegration": true,
+  "prettier.eslintIntegration": true,
+  "[reason]": {
+    "editor.formatOnSave": false
+  },
+  "reason.diagnostics.tools": ["merlin", "bsb"],
+  // Extensive search modification to allow search inside src/node_modules and test/node_modules
+  "search.exclude": {
+    "build": true,
+    "web/build": true,
+    "web/tmp": true,
+    "web/build/**": true,
+    "**/node_modules": false,
+    "/node_modules": true,
+    "coverage": true,
+    "package-lock.json": true,
+    "yarn.lock": true,
+    "test_results/": true,
+    ".vs-code/": true,
+    "lib/": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "src/node_modules/**": false,
+    "test/node_modules/**": false,
+    "/node_modules/**": true
+  },
+  "files.insertFinalNewline": true,
+  "[plaintext]": {
+    "files.insertFinalNewline": false
+  },
+  "files.trimTrailingWhitespace": true,
+  "telemetry.enableTelemetry": false,
+  "[postcss]": {
+    "editor.formatOnSave": true,
+    "files.insertFinalNewline": true
+  },
+  "[scss]": {
+    "editor.formatOnSave": true,
+    "files.insertFinalNewline": true
+  },
+  "[jsonc]": {
+    "editor.formatOnSave": true,
+    "files.insertFinalNewline": true
+  },
+  "window.title": "${activeEditorLong}${separator}${rootName}",
+  "terminal.integrated.setLocaleVariables": false,
+  "editor.fontSize": 13,
+  "window.newWindowDimensions": "maximized",
+  "editor.minimap.enabled": false,
+  "explorer.openEditors.visible": 0,
+  "window.zoomLevel": 0,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "gitlens.keymap": "alternate",
+  // bracketPairColorizer settings
+  "bracketPairColorizer.forceUniqueOpeningColor": true,
+  "bracketPairColorizer.highlightActiveScope": true,
+  "bracketPairColorizer.showHorizontalScopeLine": false,
+  "bracketPairColorizer.activeScopeCSS": [
+    "borderStyle : solid",
+    "borderWidth : 1px",
+    "borderColor : {color}; opacity: 0.5",
+    "backgroundColor: {color}"
+  ],
+  "extensions.ignoreRecommendations": false,
+  "files.associations": {
+    "*.variables": "less",
+    "*.overrides": "less"
+  },
+  "gitlens.historyExplorer.enabled": true,
+  "search.location": "sidebar",
+  "flow.enabled": false,
+  "editor.formatOnSave": false,
+  "workbench.statusBar.feedback.visible": false,
+  "breadcrumbs.enabled": true,
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }
