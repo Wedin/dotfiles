@@ -83,13 +83,14 @@
   "extensions.ignoreRecommendations": false,
   "files.associations": {
     "*.variables": "less",
-    "*.overrides": "less"
+    "*.overrides": "less",
+    ".stylelintrc": "jsonc"
   },
   "gitlens.historyExplorer.enabled": true,
   "search.location": "sidebar",
   "flow.enabled": false,
-  "editor.formatOnSave": false,
   "workbench.statusBar.feedback.visible": false,
   "breadcrumbs.enabled": true,
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.startupEditor": "newUntitledFile"
 }
