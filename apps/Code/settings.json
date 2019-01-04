@@ -1,54 +1,39 @@
 {
-  "gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": false,
-    "suppressCommitNotFoundWarning": false,
-    "suppressFileNotUnderSourceControlWarning": false,
-    "suppressGitVersionWarning": false,
-    "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": false,
-    "suppressResultsExplorerNotice": true,
-    "suppressShowKeyBindingsNotice": true,
-    "suppressUpdateNotice": false,
-    "suppressWelcomeNotice": true
-  },
-  "eslint.autoFixOnSave": true,
-  "html.format.wrapLineLength": 200,
-  "workbench.sideBar.location": "right",
+  // Prettier
   "prettier.printWidth": 140,
   "prettier.stylelintIntegration": true,
   "prettier.eslintIntegration": true,
-  "[reason]": {
-    "editor.formatOnSave": false
-  },
-  "reason.diagnostics.tools": ["merlin", "bsb"],
-  // Extensive search modification to allow search inside src/node_modules and test/node_modules
-  "search.exclude": {
-    "build": true,
-    "web/build": true,
-    "web/tmp": true,
-    "web/build/**": true,
-    "**/node_modules": false,
-    "/node_modules": true,
-    "coverage": true,
-    "package-lock.json": true,
-    "yarn.lock": true,
-    "test_results/": true,
-    ".vs-code/": true,
-    "lib/": true
-  },
-  "files.watcherExclude": {
-    "**/.git/objects/**": true,
-    "**/.git/subtree-cache/**": true,
-    "src/node_modules/**": false,
-    "test/node_modules/**": false,
-    "/node_modules/**": true
-  },
+  // Editor settings
+  "breadcrumbs.enabled": true,
+  "debug.node.autoAttach": "on",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.fontSize": 13,
+  "editor.minimap.enabled": false,
+  "eslint.autoFixOnSave": true,
+  "explorer.openEditors.visible": 0,
+  "extensions.ignoreRecommendations": false,
   "files.insertFinalNewline": true,
-  "[plaintext]": {
-    "files.insertFinalNewline": false
-  },
   "files.trimTrailingWhitespace": true,
+  "flow.enabled": false,
+  "html.format.wrapLineLength": 200,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "search.location": "sidebar",
   "telemetry.enableTelemetry": false,
+  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.setLocaleVariables": false,
+  "window.newWindowDimensions": "maximized",
+  "window.title": "${activeEditorLong}${separator}${rootName}",
+  "window.zoomLevel": 0,
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.statusBar.feedback.visible": false,
+
+  "files.associations": {
+    "*.variables": "less",
+    "*.overrides": "less",
+    ".stylelintrc": "jsonc"
+  },
+  // Language settings
   "[postcss]": {
     "editor.formatOnSave": true,
     "files.insertFinalNewline": true
@@ -61,15 +46,10 @@
     "editor.formatOnSave": true,
     "files.insertFinalNewline": true
   },
-  "window.title": "${activeEditorLong}${separator}${rootName}",
-  "terminal.integrated.setLocaleVariables": false,
-  "editor.fontSize": 13,
-  "window.newWindowDimensions": "maximized",
-  "editor.minimap.enabled": false,
-  "explorer.openEditors.visible": 0,
-  "window.zoomLevel": 0,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "gitlens.keymap": "alternate",
+  "[reason]": {
+    "editor.formatOnSave": false
+  },
+  "reason.diagnostics.tools": ["merlin", "bsb"],
   // bracketPairColorizer settings
   "bracketPairColorizer.forceUniqueOpeningColor": true,
   "bracketPairColorizer.highlightActiveScope": true,
@@ -80,17 +60,20 @@
     "borderColor : {color}; opacity: 0.5",
     "backgroundColor: {color}"
   ],
-  "extensions.ignoreRecommendations": false,
-  "files.associations": {
-    "*.variables": "less",
-    "*.overrides": "less",
-    ".stylelintrc": "jsonc"
+  // Gitlens
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": true,
+    "suppressShowKeyBindingsNotice": true,
+    "suppressUpdateNotice": false,
+    "suppressWelcomeNotice": true
   },
-  "gitlens.historyExplorer.enabled": true,
-  "search.location": "sidebar",
-  "flow.enabled": false,
-  "workbench.statusBar.feedback.visible": false,
-  "breadcrumbs.enabled": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "workbench.startupEditor": "newUntitledFile"
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "gitlens.keymap": "alternate"
 }
