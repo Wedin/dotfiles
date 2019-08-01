@@ -1,4 +1,3 @@
-Zignd.html-css-class-completion
 anseki.vscode-color
 burkeholland.simple-react-snippets
 christian-kohler.npm-intellisense
@@ -17,14 +16,15 @@ flowtype.flow-for-vscode
 formulahendry.auto-rename-tag
 freebroccolo.reasonml
 joelday.docthis
+kumar-harsh.graphql-for-vscode
 ms-python.python
 ms-vscode.Go
 msjsdiag.debugger-for-chrome
-Orta.vscode-jest
 patrys.vscode-code-outline
 ricard.postcss
+sdras.night-owl
 shinnn.stylelint
 sleistner.vscode-fileutils
 vncz.vscode-apielements
-WallabyJs.quokka-vscode
 whtouche.vscode-js-console-utils
+Zignd.html-css-class-completion

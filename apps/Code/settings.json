@@ -5,9 +5,9 @@
   "prettier.eslintIntegration": true,
   // Editor settings
   "breadcrumbs.enabled": true,
-  "debug.node.autoAttach": "on",
+  "debug.node.autoAttach": "off",
   "diffEditor.ignoreTrimWhitespace": false,
-  "editor.fontSize": 13,
+  "editor.fontSize": 14,
   "editor.minimap.enabled": false,
   "eslint.autoFixOnSave": true,
   "explorer.openEditors.visible": 0,
@@ -26,7 +26,6 @@
   "window.zoomLevel": 0,
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.statusBar.feedback.visible": false,
 
   "files.associations": {
     "*.variables": "less",
@@ -75,5 +74,11 @@
   },
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
-  "gitlens.keymap": "alternate"
+  "gitlens.keymap": "alternate",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontLigatures": true,
+  "workbench.colorTheme": "Night Owl",
+  "workbench.statusBar.feedback.visible": false
 }
