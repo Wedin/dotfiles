@@ -147,5 +147,13 @@
     "key": "cmd+g",
     "command": "workbench.action.gotoLine",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+k",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "cmd+k",
+    "command": "-workbench.action.toggleSidebarVisibility"
   }
 ]
